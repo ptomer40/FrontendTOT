@@ -1,0 +1,21 @@
+
+nav{
+    background-color: bisque;
+    height: 300px;
+   
+}
+
+ul{
+    border: 2px solid;
+    background-color: cadetblue;
+    height: 100px;
+    color: red;
+    padding-left: 100px;
+    font-size: xx-large;
+
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding:40px;
+}

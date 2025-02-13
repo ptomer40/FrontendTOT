@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+}
+.card{
+    background-color:cadetblue;
+    padding: 2rem;
+}
