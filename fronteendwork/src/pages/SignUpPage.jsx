@@ -12,7 +12,7 @@ function SignUpPage() {
         console.log("Hii:" + email)
         if (!isotpSent) {
 
-            const resp = await fetch("http://localhost:2003/api/v1/otps", {
+            const resp = await fetch(import.meta.env.VITE_BACKEND_URL+"/api/v1/otps", {
                 method: "POST",
                 body: JSON.stringify({ email: email }),
                 headers: {

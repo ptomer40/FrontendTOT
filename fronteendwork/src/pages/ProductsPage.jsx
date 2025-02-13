@@ -5,7 +5,7 @@ import ProductForm from "../components/ProductForm";
 function ProductsPage() {
     const[products,setProducts]=useState([]);
 async function getData(){
-   const resp=await fetch("http://localhost:2003/api/v1/products");
+   const resp=await fetch(import.meta.env.VITE_BACKEND_URL+"/api/v1/products");
    const data=await resp.json();
    console.log(data);
    setProducts(data.products);

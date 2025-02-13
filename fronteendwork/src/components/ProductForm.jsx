@@ -12,7 +12,7 @@ const price=values[2].value;
 const quantity=values[3].value;
 const data={title:title, company:company,price:price,quantity:quantity}
 console.log(title);
-   const res= await fetch("http://localhost:2003/api/v1/products",{
+   const res= await fetch(import.meta.env.VITE_BACKEND_URL+"/api/v1/products",{
     method:"post",
     headers:{
         "Content-Type":"application/json"
